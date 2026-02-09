@@ -1,4 +1,4 @@
-#  ITSE_2359_271 - UNIT 2 - Project by Jonathan Ortiz
+#  ITSE_2359_271 - UNIT 2 - Project by Jonathan Ortiz - 1st Revision - 02/08/2026
 > Repo for Week 3 &amp; 4 project on GameStat Character Manager 
 
 # _Objective_
@@ -12,13 +12,16 @@
   4. Level up your character
   5. Exit the program
 
+# _New Fixes for 1st Revision_
+> The next step in development was to add more input validation, as well as a more complete and cleaner program including:
+ - Ability to add spaces into character name
+ - rejects invalid input in main menu
+ - stats refresh when creating new character
+ - level-up prevents stat increasing issues, (unless the user works around its logic)
+
 # _Current Issues_
 > Despite the lack of syntax errors, there are still many logical errors to be acknowledged and resolved. As of now, these include:
-- Stats still increase in character level up regardless of added do-while loop, intended to prevent added stats after reaching max level.
-- Stats will still show regardless of whether or not the user created a character.
+- Combat stats will only increase if choice 3 of the main menu is chosen, regardless of character's level
+- You can level up a character, even if you have not created one
 
-# _Future Additions_
-> The next step in developing this application would be to add more input validation, as well as other features which include:
- - a parallel array to store multiple characters
- - combat stat calculations to compare stats and powerscaling
- - view different desired character stats
+
