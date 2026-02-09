@@ -43,8 +43,12 @@ int main() { //main menu loop
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); //discard invalid input
             cerr << "Invalid input. Please enter a number from 1-5." << endl;
             continue;
+        } else if (choice == 2 || choice == 3 || choice == 4) { //input validation for menu options that require a character to be created first
+            if (cName.empty()) {
+                cerr << "There's no one here. Please create a character first." << endl;
+                continue;
+            }
         }
-    
     switch (choice) {
         /************************
         * 1. CREATE NEW CHARACTER*
