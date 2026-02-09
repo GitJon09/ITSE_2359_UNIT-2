@@ -18,10 +18,11 @@
  - rejects invalid input in main menu
  - stats refresh when creating new character
  - level-up prevents stat increasing issues, (unless the user works around its logic)
+ - You cannot view a character's stats, calculate them, or level up if the character has not been created yet. 
 
 # _Current Issues_
 > Despite the lack of syntax errors, there are still many logical errors to be acknowledged and resolved. As of now, these include:
 - Combat stats will only increase if choice 3 of the main menu is chosen, regardless of character's level
-- You can level up a character, even if you have not created one
+
 
 
